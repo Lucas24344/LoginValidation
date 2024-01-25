@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/validacao.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Faça seu Login</h1>
+    <text>Preencha os campos abaixo</text>
+    <form id="form" onsubmit="confirm(event)">
+        <input type="password" id="senha" required placeholder="senha" >
+        <input type="password" id="confirmarsenha" required placeholder="confirme sua senha" >
+        <button type="submit">Continuar</button>
+        <div class="err" id="err">
+            <text>Suas senhas não são iguais</text>
+        </div>
+        <div class="ok" id="ok">
+            <text>Suas senhas são iguais</text>
+        </div>
+        <div class="err1" id="err1">
+            <text>Sua senha dever ter no minimo<br> seis caracteres</text>
+        </div>
+    </form>
+</body>
+</html>
