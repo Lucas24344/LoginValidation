@@ -1,13 +1,3 @@
-
-//window.prompt("Digite seu nome aqui")
-//var confirmacao=window.confirm("Continuar?")
-
-/*if(confirmacao){
-    window.alert("Welcome!")
-}
-else{
-    window.alert("Bye Bye")
-*/
 function confirm(event){
     event.preventDefault();
     var qtdcaracteres=6;
@@ -16,6 +6,8 @@ function confirm(event){
  
     if(pass.length>qtdcaracteres){
         if(pass===confpass){
+            document.getElementById('senha').style.border="";
+            document.getElementById('confirmarsenha').style.border=""
             document.getElementById('err1').style.display="none"
             document.getElementById("ok").style.display="block";
             document.getElementById("err").style.display='none'   
