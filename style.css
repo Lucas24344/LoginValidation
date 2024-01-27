@@ -20,7 +20,9 @@ input{
     flex-direction: column;
     margin-top:10px;
     border-radius:8px;
-    border:1px solid;
+}
+#senha{
+    
 }
 button{
     margin-top:10px;
